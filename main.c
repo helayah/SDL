@@ -59,7 +59,7 @@ int main(int argc, char *argv[]){
  SDL_FillRect(carreMilieu,NULL,red-125);
  SDL_Rect carreMilieuPosition;
  carreMilieuPosition.x = 150;
- carreMilieuPosition.y = 150;
+ carreMilieuPosition.y = 100;
  SDL_BlitSurface(carreMilieu,NULL,fenetre,&carreMilieuPosition);
  SDL_Flip(fenetre);
  //Boucle infini
