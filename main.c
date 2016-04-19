@@ -53,7 +53,15 @@ int main(int argc, char *argv[]){
  carreMelangePositions.y = 450;
  SDL_BlitSurface(carreMelange2,NULL,fenetre,&carreMelangePositions);
  SDL_Flip(fenetre);
- 
+ //Créer une nouvelle fenêtre
+ SDL_Surface *carreMilieu;
+ carreMilieu = SDL_CreateRGBSurface(SDL_HWSURFACE,50,50,32,0,0,0,0);
+ SDL_FillRect(carreMilieu,NULL,red-125);
+ SDL_Rect carreMilieuPosition;
+ carreMilieuPosition.x = 150;
+ carreMilieuPosition.y = 150;
+ SDL_BlitSurface(carreMilieu,NULL,fenetre,&carreMilieuPosition);
+ SDL_Flip(fenetre);
  //Boucle infini
  while(1){// ou for(;;)
    SDL_Event event;
